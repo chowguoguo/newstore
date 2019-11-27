@@ -1,4 +1,9 @@
 package com.quechao.mobile.enums;
 
-public class ResultEnum {
+import lombok.Getter;
+
+@Getter
+public enum  ResultEnum {
+
+
 }
