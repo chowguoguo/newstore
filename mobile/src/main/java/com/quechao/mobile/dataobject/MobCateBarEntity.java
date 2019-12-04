@@ -1,4 +1,4 @@
 package com.quechao.mobile.dataobject;
 
-public class PageBasicInfo {
+public class MobCateBarEntity {
 }

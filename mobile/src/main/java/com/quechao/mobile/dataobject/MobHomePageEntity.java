@@ -1,12 +1,14 @@
 package com.quechao.mobile.dataobject;
 
 import lombok.Data;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
 
+/**
+ * 首页模版
+ */
 @Entity
 @Data
 @Table(name = "np_mob_home_page")
