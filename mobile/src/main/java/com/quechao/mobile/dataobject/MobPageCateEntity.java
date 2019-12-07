@@ -1,6 +1,8 @@
 package com.quechao.mobile.dataobject;
 
 import lombok.Data;
+import lombok.Generated;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -15,6 +17,7 @@ import java.util.Date;
 public class MobPageCateEntity {
 
     @Id
+    @Generated
     private Long cateId;
 
     private String name;
