@@ -13,6 +13,6 @@ public class ResultVO<T> {
     private String message;
 
     /**list内容*/
-    private T data;
+    private T dataList;
 
 }

@@ -12,7 +12,7 @@ import java.util.Date;
 @Entity
 @Data
 @Table(name = "np_mob_page_cate")
-public class MobPageCate {
+public class MobPageCateEntity {
 
     @Id
     private Long cateId;

@@ -12,7 +12,7 @@ import java.util.Date;
 @Entity
 @Data
 @Table(name = "np_mob_home_page")
-public class MobHomePage {
+public class MobHomePageEntity {
 
     @Id
     private Long homepageId;
