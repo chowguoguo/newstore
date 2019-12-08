@@ -3,6 +3,7 @@ package com.quechao.order.dataobject;
 import com.quechao.order.enums.OrderStatusEnum;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.math.BigDecimal;
@@ -11,10 +12,10 @@ import java.util.Date;
 @Entity
 @Data
 @DynamicUpdate
-public class OrderMaster{
+public class OrderMaster {
 
     @Id
-    private  String orderId;
+    private String orderId;
 
     private String buyerName;
 
@@ -28,7 +29,7 @@ public class OrderMaster{
 
     private Integer orderStatus = OrderStatusEnum.NEW.getCode();
 
-    private Date createTime ;
+    private Date createTime;
 
-    private Date updateTime ;
+    private Date updateTime;
 }

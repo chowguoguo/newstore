@@ -16,7 +16,7 @@ public class OrderDTO {
     private Date createTime;
 
     @JsonIgnore
-    public OrderStatusEnum getOrderStatusEnum(){
-        return EnumUtil.getByCode(orderStatusCode,OrderStatusEnum.class);
+    public OrderStatusEnum getOrderStatusEnum() {
+        return EnumUtil.getByCode(orderStatusCode, OrderStatusEnum.class);
     }
 }

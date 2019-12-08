@@ -1,6 +1,7 @@
 package com.quechao.mobile.dataobject;
 
 import lombok.Data;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;

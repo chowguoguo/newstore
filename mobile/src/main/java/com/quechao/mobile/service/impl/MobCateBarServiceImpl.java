@@ -1,4 +1,5 @@
 package com.quechao.mobile.service.impl;
+
 import com.quechao.mobile.dataobject.MobCateBarEntity;
 import com.quechao.mobile.repository.MobCateBarRepository;
 import com.quechao.mobile.service.MobCateBarService;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.Optional;
+
 @Service
 public class MobCateBarServiceImpl implements MobCateBarService {
 
@@ -20,24 +22,25 @@ public class MobCateBarServiceImpl implements MobCateBarService {
     @Override
     public Page<MobCateBarEntity> queryMobCateBarByPb(String delflag, Pageable pageable) {
 
-        Page<MobCateBarEntity> mobCateBarEntityPage = mobCateBarRepository.findByDelflag("0",pageable);
+        Page<MobCateBarEntity> mobCateBarEntityPage = mobCateBarRepository.findByDelflag("0", pageable);
 
         return mobCateBarEntityPage;
     }
+
     //创建分类导航
     @Override
-    public MobCateBarEntity createMobCateBar(MobCateBarEntity mobCateBarEntity) {
+    public void createMobCateBar(MobCateBarEntity mobCateBarEntity) {
         //mysql 5.7以上，不需要设置时间，默认会自动更新
-        if (mobCateBarEntity.getCateBarId() == 0){
+        if (mobCateBarEntity.getCateBarId() == 0) {
             mobCateBarEntity.setCreateDate(new Date());
             mobCateBarEntity.setUpdateDate(new Date());
-        }else{
+        } else {
             mobCateBarEntity.setUpdateDate(new Date());
         }
         //TODO 添加修改人
         mobCateBarRepository.save(mobCateBarEntity);
-        return null;
     }
+
     //删除分类导航
     @Override
     public void deleteMobCateBar(Long mobCateBarId) {

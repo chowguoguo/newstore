@@ -10,7 +10,7 @@ import java.io.Console;
 public class OrderExceptionHandler {
 
     @ExceptionHandler(value = OrderException.class)
-    public void orderException(){
+    public void orderException() {
         System.out.println("订单创建异常");
     }
 

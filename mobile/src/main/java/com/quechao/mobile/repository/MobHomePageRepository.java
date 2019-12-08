@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 //模版列表
 //模版的新建或修改保存
-public interface MobHomePageRepository extends JpaRepository<MobHomePageEntity,Long>, JpaSpecificationExecutor<MobHomePageEntity> {
+public interface MobHomePageRepository extends JpaRepository<MobHomePageEntity, Long>, JpaSpecificationExecutor<MobHomePageEntity> {
 
     Page<MobHomePageEntity> findByTemp3AndTemp4(String temp3, String temp4, Pageable pageable);
 }

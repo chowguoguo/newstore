@@ -3,7 +3,8 @@
 <head>
     <title>鹊巢美博汇商城首页</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta name="keywords" content="鹊巢美博汇">
     <meta name="description" content="鹊巢美博汇">
     <#if cssList?size!=0>
@@ -19,8 +20,8 @@
     </#if>
 </head>
 <body>
-    <div id="main">
+<div id="main">
 
-    </div>
+</div>
 </body>
 </html>

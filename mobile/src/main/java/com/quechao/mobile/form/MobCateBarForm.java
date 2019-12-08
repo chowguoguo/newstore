@@ -5,6 +5,7 @@ import lombok.Data;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+
 //添加分类导航
 @Data
 public class MobCateBarForm {
@@ -25,7 +26,7 @@ public class MobCateBarForm {
 
     @NotNull
     @NotEmpty
-    private  Integer grade;//级别,共分3级
+    private Integer grade;//级别,共分3级
 
     @NotNull
     @NotEmpty

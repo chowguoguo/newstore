@@ -12,10 +12,11 @@ import org.springframework.stereotype.Component;
 public class AuthorizeAspect {
 
     @Pointcut(value = "execution(public * com.quechao.order.controller.CustomerController.create*(..))")
-    public void authorizeVerify(){ }
+    public void authorizeVerify() {
+    }
 
     @Before("authorizeVerify()")
-    public void doAuthorizeVerify(){
+    public void doAuthorizeVerify() {
 
         System.out.println("controller认证");
 

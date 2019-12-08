@@ -7,7 +7,7 @@ import lombok.Data;
 public class ResultVo<T> {
 
     @JsonProperty("messageCode")
-    private   Integer code;
+    private Integer code;
 
     @JsonProperty("messageText")
     private String message;

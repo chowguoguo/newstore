@@ -35,5 +35,4 @@ public class MobPageCateEntity {
     private Date updateDate;//更新日期
 
 
-
 }

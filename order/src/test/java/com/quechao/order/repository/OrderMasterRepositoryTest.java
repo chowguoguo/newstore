@@ -20,10 +20,10 @@ class OrderMasterRepositoryTest {
 
     @Autowired
     private OrderMasterRepository repository;
-    private final String OPENID="110110";
+    private final String OPENID = "110110";
 
     @Test
-    void saveTest(){
+    void saveTest() {
         OrderMaster orderMaster = new OrderMaster();
         orderMaster.setBuyerOpenid(OPENID);
         orderMaster.setBuyerName("chowguoguo");

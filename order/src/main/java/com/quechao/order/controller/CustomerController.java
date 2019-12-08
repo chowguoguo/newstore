@@ -19,14 +19,14 @@ import java.util.Map;
 public class CustomerController {
 
     @PostMapping("create")
-    public ResultVo<Map<String,String>> createOrder(@Valid OrderForm orderForm, BindingResult bindingResult){
+    public ResultVo<Map<String, String>> createOrder(@Valid OrderForm orderForm, BindingResult bindingResult) {
 
-        if (bindingResult.hasErrors()){
-            log.error("传入参数异常，orderForm={}",orderForm);
+        if (bindingResult.hasErrors()) {
+            log.error("传入参数异常，orderForm={}", orderForm);
             log.error(bindingResult.getFieldError().getDefaultMessage());
-            throw new OrderException(OrderResultEnum.ORDER_PARAM_ERROR.getCode(),bindingResult.getFieldError().getDefaultMessage());
+            throw new OrderException(OrderResultEnum.ORDER_PARAM_ERROR.getCode(), bindingResult.getFieldError().getDefaultMessage());
         }
         System.out.println("adfadsfas");
-        return  null;
+        return null;
     }
 }

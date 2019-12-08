@@ -16,7 +16,7 @@ public class OrderForm {
     @NotEmpty(message = "下单人地址不能为空")
     private String address;
 
-//    @NotEmpty(message = "购物车不能为空")
+    //    @NotEmpty(message = "购物车不能为空")
     private String items;
 
 

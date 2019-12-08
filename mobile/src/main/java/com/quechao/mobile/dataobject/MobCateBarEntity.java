@@ -31,7 +31,7 @@ public class MobCateBarEntity {
 
     private String isUsing;
 
-    private String delflag ="0";
+    private String delflag = "0";
 
     private Long createUserId;
 

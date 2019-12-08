@@ -1,4 +1,5 @@
 package com.quechao.mobile.construction;
+
 import com.quechao.mobile.config.FreeMakerConfig;
 import freemarker.cache.FileTemplateLoader;
 import freemarker.cache.StringTemplateLoader;
@@ -17,13 +18,13 @@ public class FreeMarkerConstruction {
 //    @Autowired
 //    private FreeMakerConfig freeMakerConfig;
 
-    public Configuration freeMakerConfig(){
+    public Configuration freeMakerConfig() {
 
         Configuration configuration = new Configuration(Configuration.getVersion());
         configuration.setDefaultEncoding("UTF-8");
         System.out.println(this.getClass().toString());
-        configuration.setClassForTemplateLoading(this.getClass(),"/templates");
-        return  configuration;
+        configuration.setClassForTemplateLoading(this.getClass(), "/templates");
+        return configuration;
     }
 
 }

@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface MobPageCateRepository extends JpaRepository<MobPageCateEntity,Long> {
+public interface MobPageCateRepository extends JpaRepository<MobPageCateEntity, Long> {
 
     Page<MobPageCateEntity> findByDelflag(String delflag, Pageable pageable);
 

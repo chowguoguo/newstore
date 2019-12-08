@@ -9,7 +9,7 @@ public interface MobPageCateService {
 
 
     //查询列表
-    Page<MobPageCateEntity>queryMobPageCateByPageBean(Pageable pageable);
+    Page<MobPageCateEntity> queryMobPageCateByPageBean(Pageable pageable);
 
     //删除某个分类
     void delMobPageCate(Long ids);

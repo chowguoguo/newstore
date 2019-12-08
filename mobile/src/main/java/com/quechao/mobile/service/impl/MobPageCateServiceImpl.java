@@ -18,11 +18,12 @@ public class MobPageCateServiceImpl implements MobPageCateService {
     @Override
     public Page<MobPageCateEntity> queryMobPageCateByPageBean(Pageable pageable) {
 
-        return mobPageCateRepository.findByDelflag("0",pageable);
+        return mobPageCateRepository.findByDelflag("0", pageable);
     }
 
     /**
      * 添加
+     *
      * @param mobPageCateEntity
      */
     @Override

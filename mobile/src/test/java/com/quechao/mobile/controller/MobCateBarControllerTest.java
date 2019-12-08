@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@RunWith(SpringRunner.class )
+@RunWith(SpringRunner.class)
 @SpringBootTest
 @Slf4j
 class MobCateBarControllerTest {
@@ -25,16 +25,16 @@ class MobCateBarControllerTest {
     @Test
     void queryMobCateBarByPb() {
 
-        Integer page =0;
-        Integer size=15;
+        Integer page = 0;
+        Integer size = 15;
 
-        PageRequest request = PageRequest.of(page,size);
-        Page<MobCateBarEntity> mobCateBarEntityPage = mobCateBarService.queryMobCateBarByPb("0",request);
+        PageRequest request = PageRequest.of(page, size);
+        Page<MobCateBarEntity> mobCateBarEntityPage = mobCateBarService.queryMobCateBarByPb("0", request);
         System.out.println(mobCateBarEntityPage);
     }
 
     @Test
-    void  deleteMobCateBar(){
+    void deleteMobCateBar() {
         Long catebarId = 961L;
 
         mobCateBarService.deleteMobCateBar(catebarId);
