@@ -10,5 +10,13 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   application:
     name: order
+  rabbitmq:
+    host: 39.106.67.21
+    username: guest
+    password: guest
+    port: 5672
+    cache:
+      channel:
+        size: 50
 server:
   port: 8020
