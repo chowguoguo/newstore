@@ -20,3 +20,5 @@ spring:
         size: 50
 server:
   port: 8020
+env: 
+  dev
