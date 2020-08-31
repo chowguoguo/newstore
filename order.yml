@@ -1,0 +1,14 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://39.106.67.21/qdd_esport_matches?zeroDateTimeBehavior=convertToNull&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: order
+server:
+  port: 8020
